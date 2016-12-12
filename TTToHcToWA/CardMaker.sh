@@ -16,6 +16,8 @@ CardVar1="mhc"
 CardVar2="mh3"
 if [[ ${LepDec} == '1e2mu' ]]; then Process="TTToHcToWA_1e2mu";
 elif [[ ${LepDec} == '3mu' ]]; then Process="TTToHcToWA_3mu";
+elif [[ ${LepDec} == '1ta2mu' ]]; then Process="TTToHcToWA_1ta2mu";
+elif [[ ${LepDec} == '2l2mu' ]]; then Process="TTToHcToWA_2l2mu";
 else echo "Lepton Decay mode wrong, Type again"; exit 1;
 fi
 

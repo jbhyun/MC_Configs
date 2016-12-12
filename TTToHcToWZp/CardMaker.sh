@@ -19,6 +19,8 @@ CardVar2="mzp"
 
 if [[ ${LepDec} == '1e2mu' ]]; then Process="TTToHcToWZp_1e2mu";
 elif [[ ${LepDec} == '3mu' ]]; then Process="TTToHcToWZp_3mu";
+elif [[ ${LepDec} == '1ta2mu' ]]; then Process="TTToHcToWZp_1ta2mu";
+elif [[ ${LepDec} == '2l2mu' ]]; then Process="TTToHcToWZp_2l2mu";
 else echo "Lepton Decay mode wrong, Type again"; exit 1;
 fi
 
