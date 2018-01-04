@@ -9,20 +9,23 @@
 
 InputMhc="130"
 InputMA="30"
-LepDec=$1
 Var1="MHc"
 Var2="MA"
 CardVar1="mhc"
 CardVar2="mh3"
-if [[ ${LepDec} == '1e2mu' ]]; then Process="TTToHcToWA_1e2mu";
-elif [[ ${LepDec} == '3mu' ]]; then Process="TTToHcToWA_3mu";
-elif [[ ${LepDec} == '1ta2mu' ]]; then Process="TTToHcToWA_1ta2mu";
-elif [[ ${LepDec} == '2l2mu' ]]; then Process="TTToHcToWA_2l2mu";
-else echo "Lepton Decay mode wrong, Type again"; exit 1;
-fi
 
-declare -a MhcList=("90" "100" "110" "120" "130" "140" "150" "160")
-declare -a MAList=("10" "15" "20" "25" "30" "35")
+Process="TTToHcToWA_AToMuMu"
+
+#LepDec=$1
+#if [[ ${LepDec} == '1e2mu' ]]; then Process="TTToHcToWA_1e2mu";
+#elif [[ ${LepDec} == '3mu' ]]; then Process="TTToHcToWA_3mu";
+#elif [[ ${LepDec} == '1ta2mu' ]]; then Process="TTToHcToWA_1ta2mu";
+#elif [[ ${LepDec} == '2l2mu' ]]; then Process="TTToHcToWA_2l2mu";
+#else echo "Lepton Decay mode wrong, Type again"; exit 1;
+#fi
+
+declare -a MhcList=("100" "110" "120" "130" "140" "150" "160")
+declare -a MAList=("15" "20" "25" "30" "35")
 
 
 ##Main Code
