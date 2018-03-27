@@ -25,7 +25,7 @@ Process="TTToHcToWA_AToMuMu"
 #fi
 
 declare -a MhcList=("100" "110" "120" "130" "140" "150" "160")
-declare -a MAList=("15" "20" "25" "30" "35")
+declare -a MAList=("15" "25" "35" "45" "55" "65" "75")
 
 
 ##Main Code
